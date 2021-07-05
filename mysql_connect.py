@@ -48,5 +48,5 @@ class Funcs:
 		self.cursor.execute("""
             INSERT INTO books(nome_livro, autor, paginas)
             VALUES (?, ?, ?);""", (self.nome_livro, self.autor, self.paginas))
-        self.conn.commit()
+        self.con.commit()
         self.desconecta_bd()

@@ -26,8 +26,8 @@ class Funcs:
 	def cria_tabela(self, tabela):
 		self.conecta_bd()
 		self.cursor.execute('''
-				CREATE TABLE IF NOT EXISTS livros(
-					id INT AUTO_INCREMENTE PRIMARY KEY,
+				CREATE TABLE IF NOT EXISTS books(
+					id INT AUTO_INCREMENT PRIMARY KEY,
 					nome_livro varchar(80),
 					autor varchar(80),
 					paginas INT

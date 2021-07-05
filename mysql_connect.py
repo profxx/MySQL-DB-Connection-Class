@@ -11,7 +11,7 @@ class Funcs:
 			self.con = mysql.connect(		# Conectar
 				host = 'localhost',			# -
 				user = 'root',				# -- Parâmetros necessários
-				passwd = '',				# -
+				password = '',				# -
 				database = 'my_books')		# - 
 
 			self.cursor = con.cursor()		# Criar cursor

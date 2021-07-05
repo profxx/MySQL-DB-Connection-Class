@@ -9,10 +9,10 @@ class Funcs:
 	def conecta_bd(self):					# CONEXÃO
 		try:
 			self.con = mysql.connect(		# Conectar
-				host = '127.0.0.1',			# -
-				database = 'my_books',		# -
+				host = 'localhost',			# -
 				user = 'root',				# -- Parâmetros necessários
-				passwd = '')				# - 
+				passwd = '',				# -
+				database = 'my_books')		# - 
 
 			self.cursor = con.cursor()		# Criar cursor
 			print('Conectado ao banco de dados.')

@@ -10,11 +10,12 @@ class Funcs:
 		try:
 			self.con = mysql.connect(		# Conectar
 				host = 'localhost',			# -
-				user = 'root',				# -- Parâmetros necessários
-				password = '',				# -
-				database = 'my_books')		# - 
+				user = 'root',				# - 
+				password = '',				# - Parâmetros necessários
+				database = 'my_books'		# - 
+				)							# - 
 
-			self.cursor = con.cursor()		# Criar cursor
+			self.cursor = self.con.cursor()	# Criar cursor
 			print('Conectado ao banco de dados.')
 
 		except:
@@ -54,5 +55,4 @@ class Funcs:
 
 #Programa Principal
 a = Funcs()
-a.cria_tabela()
-a.insere_livro()
+a.conecta_bd()
